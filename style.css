@@ -1,0 +1,275 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Home Page (index.html) */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    animation: gradientShift 10s infinite alternate;
+}
+
+.home .content {
+    text-align: center;
+    animation: fadeIn 3s ease-in;
+}
+
+.home .content h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.home .content span {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    padding: 0.75rem 2rem;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(135deg, #3498db, #2c3e50);
+    }
+    100% {
+        background: linear-gradient(135deg, #e74c3c, #8e44ad);
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Selection Page */
+body {
+    background-color: #2c3e50; /* Set entire page background */
+    margin: 0; /* Remove any default margin */
+    padding: 0;
+}
+
+.selection {
+    padding: 4rem 0;
+    background-color: #2c3e50;
+    text-align: center; /* Center-align content */
+}
+
+.selection h2 {
+    font-size: 2.5rem;
+    color: #ecf0f1;
+    margin-bottom: 2rem; /* Space below the heading */
+}
+
+.selection .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows proper wrapping on smaller screens */
+    gap: 2rem; /* Space between the cards */
+}
+
+.selection .card {
+    background-color: #34495e;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 220px; /* Adjusted width for better layout */
+    cursor: pointer;
+    text-align: center; /* Ensure text is centered */
+}
+
+.selection .card:hover {
+    transform: scale(1.05);
+    background-color: #1279a9; /* Added a color change on hover */
+}
+
+.selection .card h3 {
+    font-size: 1.5rem;
+    color: #ecf0f1;
+    margin: 0; /* Remove default margin */
+}
+
+
+/* About Page */
+.about {
+    padding: 4rem;
+    background-color: #34495e;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    background-color: #2c3e50;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.75rem 2rem;
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #c0392b;
+}
+
+/* Projects */
+.projects {
+    padding: 4rem;
+    background-color: #2c3e50;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #34495e;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #ecf0f1;
+}
+
+.card p {
+    color: #bdc3c7;
+}
+
+/* Skills Page */
+.skills {
+    padding: 4rem;
+    background-color: #34495e;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    background-color: #2c3e50;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+/* Fix for mobile responsiveness */
+@media (max-width: 768px) {
+    .home .content h1 {
+        font-size: 3rem;
+    }
+    .project-cards, .selection .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+    }
+}
